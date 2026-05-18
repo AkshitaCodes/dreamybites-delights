@@ -276,19 +276,23 @@
   }
   .cake-card:hover { transform: translateY(-6px); scale: 1.01; box-shadow: 0 24px 60px rgba(59,31,14,0.12); }
   .cake-card-img {
-    height: 220px;
-    background: var(--warm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 6rem;
-    position: relative;
-    overflow: hidden;
-  }
+  width: 100%;
+  min-height: 220px;
+  background: var(--warm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+}
   .cake-card-img img{
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  display: block;
+  border-radius: 1rem;
 }
   .cake-card-img::after {
     content: '';
